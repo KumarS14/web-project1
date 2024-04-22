@@ -1,0 +1,162 @@
+#title-rect
+{
+    position: fixed;
+    width: 42.0833vw; /* 50% of the viewport width */
+    height: 7.4439vh;
+    left: 50%;
+    transform: translate(-50%, 20%);
+   background-color:  #FED55E; 
+   justify-content: center;
+   align-items: center; 
+   display: inline-flex;
+   border: 2.88px black solid;
+   font-size: 2vh;
+   font-style: italic;
+    
+}
+html {
+    background-color: #A41D2C;
+   
+}
+.dot {
+    height: 6vh;
+    width: 6vh; /* Fixed width */
+    background-color: #FED55E;
+    border-radius: 50%;
+    display: inline-block;
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #A41D2C;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+}
+.text-box{
+    height: 50%; /* Set height to 50% of viewport height */
+    width: auto; /* Let the width adjust automatically */
+    text-align: center;
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto;
+    transform: translateY(80%);
+    
+}
+.text-box#left {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10vh); /* Adjust this value as needed */
+    transform: translateY(-50%);
+}
+
+.text-box#right {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10vh); /* Adjust this value as needed */
+    transform: translateY(-50%);
+}
+
+
+
+.text-box#middle {
+    text-align: center; 
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; 
+    transform: translateY(150%);
+}
+.text-box#navbox {
+    display: flex;
+    flex-direction: row; /* Arrange children in a column */
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FED55E;
+    width: 90vw;
+    height: 60vh;
+    border: 3px solid black;
+}
+
+.nav-titles {
+    margin-top: 5px; /* Adjust as needed to add space between icon and title */ /* Adjust font size as needed */
+    color: black; /* Adjust color as needed */
+    font-family: "might-makes-right-bb", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#title{
+    height: 20%; /* Set height to 50% of viewport height */
+    width: auto; /* Let the width adjust automatically */
+   text-align: center;
+   display: block; /* Makes the image a block-level element */
+   margin: 0 auto
+}
+
+
+@media screen and (max-width: 600px) {
+    .text-box#navbox {
+        height: 18vh; /* Adjust height for smaller screens */
+        transform: translateY(190%);
+    }
+    .text-box {
+        height: 20vh; /* Adjust height for smaller screens */
+        top: calc(40% - 10vh)
+    }
+    .nav-titles {
+        font-size: 2vw;
+    }
+
+    .icon{
+        height:8vh;
+
+    }
+    #title{
+        height: 5vh;
+    }
+}
+
+/* Media query for medium-sized screens (e.g., tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .text-box#navbox {
+        height: 35vh; /* Adjust height for smaller screens */
+        transform: translateY(400%);
+    }
+   
+    .text-box {
+        height: 25vhx; /* Adjust height for medium-sized screens */
+    }
+
+    .icon{
+        height:11.5vh;
+
+    }
+    #title{
+        height: 7.5vh;
+    }
+}
+
+/* Media query for larger screens (e.g., laptops and desktops) */
+@media screen and (min-width: 1025px) {
+    .text-box {
+        height: 45vh; /* Maintain default height for larger screens */
+       
+    }
+    .icon{
+        height:15vh;
+
+    }
+    .text-box#navbox {
+        transform: translateY(150%); /* Adjust the translateY value for larger devices */
+    }
+    #title{
+        height: 10vh;
+    }
+}
+
+
+
+
+
+
