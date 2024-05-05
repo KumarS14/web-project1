@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ilr8nkk.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">  <!--Enables for css in styles to be applied here -->
+   <link rel="stylesheet" href="https://use.typekit.net/ilr8nkk.css">  <!-- enables for adobe fonts to be used in website -->
 </head>
 <body>
-    
-    <img class="text-box" id="left" src="/images/Asset 1.png">
-    <img src="/images/TITLE.png" id="title">
-    <img class="text-box" id="right" src="/images/Asset 2.png">
-    <img class="text-box" id="middle" src="/images/middle-speech-bubble.png">
-    <div class="text-box" id="navbox">
-        <div class="nav-item">
-            <img class="icon" src="/images/About-us-icon.png">
-            <p class="nav-titles">About Us</p>
-        </div>
-        <div class="nav-item">
-            <img class="icon" src="/images/Ellipse 7.png">
-            <p class="nav-titles">Wondering about our food selection?</p>
-        </div>
-        <div class="nav-item">
-            <img class="icon" src="/images/Ellipse 6.png">
-            <p class="nav-titles">Learn about our weekly tournaments 👀</p>
-        </div>
+
+   <img class="text-box" id="left" src="/media/index-page-images/left-speech-bubble.png">  <!-- image of left speech bubble -->
+   <img src="/media/index-page-images//TITLE.png" id="title">
+   <img class="text-box" id="right" src="/media/index-page-images//right-speech-bubble.png"> <!-- image of right speech bubble -->
+   <img class="text-box" id="middle" src="/media/index-page-images//middle-speech-bubble.png"> <!-- image of middle speech bubble -->
+   <div class="text-box" id="navbox"> <!-- container for icons so they can be layed out properly -->
+    <div class="nav-item">
+        <a href="about-us.html"> 
+            <img class="icon" src="/media/index-page-images/About-us-icon.png"> <!-- icon that serves as button to about us page -->
+        </a>
+        <p class="nav-titles">About Us</p>
     </div>
-    <!-- Additional content to enable scrolling -->
-    <div style="height: 200vh;">
-        <!-- Add enough content to exceed the viewport height -->
+    <div class="nav-item">
+        <a href="order.html">
+            <img class="icon" src="/media/index-page-images//menu-icon.png"> <!-- icon that serves as button to about us page -->
+        </a>
+        <p class="nav-titles">Wondering about our food selection?</p>
     </div>
-    
-    
+    <div class="nav-item">
+        <a href="tournaments.html">
+            <img class="icon" src="/media/index-page-images//tournaments-icon.png"> <!-- icon that serves as button to tournaments page -->
+        </a>
+        <p class="nav-titles">Learn about our weekly tournaments 👀</p>
+    </div>
+</div>
+
+   <!-- Additional content to enable scrolling -->
+   <div style="height: 200vh;">
+       <!-- Add enough content to exceed the viewport height -->
+   </div>
+
+
 </body>
 </html>

@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #FED55E;">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css"> <!--Enables for css in styles to be applied here -->
+   <link rel="stylesheet" href="https://use.typekit.net/ilr8nkk.css">  <!-- enables for adobe fonts to be used in website -->
 </head>
 <body>
-    <div class="page-header">
-        <span class="dot"></span>
-
+    <div class="page-header">  <!-- div servers as page header and navbar -->
+        <a href="index.html" class="skewed-link">
+            <div class="skewed">Home <br> Page</div>  <!-- Skewed shape servers as a redirect to home page  -->
+        </a>
+        <a href="order.html" class="skewed-link">
+            <div class="skewed">View <br> Menu</div> <!-- Skewed shape servers as a redirect to menu page  -->
+        </a>
+        <a href="tournaments.html" class="skewed-link">
+            <div class="skewed">Tourna <br>-ments</div> <!-- Skewed shape servers as a redirect to tournaments page  -->
+        </a>
     </div>
     
+   <div class="about-us-grid"> <!--div servers as grid  -->
+    <img class="about-us-box" src="/media/about-us-page-media/about-us-text-box.png"> <!-- image is the container and text as one image rather then typing it  -->
+    <br>
+    <img class="about-us-title" src="/media/about-us-page-media/about-us-title-img.png"> <!-- image of the title and its container -->
+    <br>
+    <br>
+    <div id="query-box"> <!-- code here serves to allow user to enter email and query but it is dummy in that it wont post it to a database or anything  -->
+        <form>
+            <label id="email-label" for="email">Enter your email here:</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <br>
+        <form>
+            <label id="query-label" for="query">Enter your query here:</label>
+            <input type="query" id="query" name="query">
+        </form>
+        <input id="query-submit" type="submit" value="Send Request" />
+
+    </div>
+   </div>
+  
 </body>
 </html>

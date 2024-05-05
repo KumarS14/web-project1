@@ -1,0 +1,316 @@
+title-rect
+{
+   position: fixed;
+   width: 42.0833vw; /* 50% of the viewport width */
+   height: 7.4439vh;
+   left: 50%;
+   transform: translate(-50%, 20%);
+  background-color:  #FED55E; 
+  justify-content: center;
+  align-items: center; 
+  display: inline-flex;
+  border: 2.88px black solid;
+  font-size: 2vh;
+  font-style: italic;
+
+}
+/* Change cursor to pointer on hover */
+.icon {
+    cursor: pointer;
+}
+
+/* Add a subtle hover effect */
+.icon:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+html {
+   background-color: #A41D2C;
+
+}
+.skewed {
+   transform: skew(10deg, 15deg);
+   background-color:#FED55E;
+   font-family: "might-makes-right-bb", sans-serif;
+ }
+.dot {
+   height: 6vh;
+   width: 6vh; /* Fixed width */
+   background-color: #FED55E;
+   border-radius: 50%;
+   display: inline-block;
+}
+.page-header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 10vh;
+   background-color: #A41D2C;
+   z-index: 1000; /* Ensure the header stays on top of other content */
+}
+.text-box{
+   height: 50%; /* Set height to 50% of viewport height */
+   width: auto; /* Let the width adjust automatically */
+   text-align: center;
+   display: block; /* Makes the image a block-level element */
+   margin: 0 auto;
+   transform: translateY(80%);
+
+}
+.text-box#left {
+   position: absolute;
+   left: 0;
+   top: calc(50% - 10vh); /* Adjust this value as needed */
+   transform: translateY(-50%);
+}
+
+.text-box#right {
+   position: absolute;
+   right: 0;
+   top: calc(50% - 10vh); /* Adjust this value as needed */
+   transform: translateY(-50%);
+}
+.about-us-box {
+    text-align: center; /* Center the text */
+    display: block; /* Makes the container a block-level element */
+    margin: 0 auto; /* Centers the container horizontally */
+    width: 100%; /* Ensure the container takes up the full width */
+    height: 150vh;
+}
+.about-us-title{
+    text-align: center; /* Center the text */
+    display: block; /* Ensures it takes the full width */
+    margin: 0 auto;
+    width: 80vw;
+   
+}
+#query {
+    height: 6em; /* Triple the height of the input box */
+    font-family: "might-makes-right-bb", sans-serif; /* Change the font */
+    background-color:#FED55E; /* Change the background color */
+}
+.circle {
+    height: 60vh; /* Set height relative to viewport height */
+    width: 60vh; /* Set width to match height for a perfect circle */
+    border-radius: 50%; /* Ensure a perfect circle */
+    background-color: #A41D2C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tournament-images{
+    height: 20vh;
+    width:auto;
+}
+.tournament-text{
+    font-family: "might-makes-right-bb", sans-serif;
+    color: #FED55E;
+    text-align: center;
+     /* Hide text that exceeds the circle */
+    text-overflow: ellipsis; /* Show ellipsis for truncated text */
+    width: fit-content; /* Adjust width based on content */
+    max-width: 80%; /* Limit width to avoid stretching too much */
+    font-size: calc(0.8vh + 0.8vw);
+    font-style: italic;
+
+}
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#query-label {
+    font-family: "might-makes-right-bb", sans-serif; /* Change the font */
+    color: #FED55E;
+}
+#query-submit{
+    font-family: "might-makes-right-bb", sans-serif;
+    background-color:#FED55E;
+    color: #A41D2C;
+    height: 3vh;
+}
+
+#order-grid {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+}
+
+.order-card {
+    height: 25vh; /* Adjust height as needed */
+     /* 3 columns with gap */
+}
+#order-body, #order-page {
+    height: 100%;
+    margin: 0;
+    display: flex; /* Use flexbox for the body and html elements */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+h1{
+    font-family: "might-makes-right-bb", sans-serif;
+    color:#FED55E;
+}
+
+
+
+
+
+
+.text-box#middle {
+   text-align: center; 
+   display: block; /* Makes the image a block-level element */
+   margin: 0 auto; 
+   transform: translateY(150%);
+}
+.text-box#navbox {
+   display: flex;
+   flex-direction: row; /* Arrange children in a column */
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #FED55E;
+   width: 90vw;
+   height: 60vh;
+   border: 3px solid black;
+}
+#email {
+    font-family: "might-makes-right-bb", sans-serif; /* Change the font */
+    background-color:#FED55E; /* Change the background color */
+    height: 2vh;
+}
+
+#email-label {
+    font-family: "might-makes-right-bb", sans-serif; /* Change the font */
+    color: #FED55E;
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.nav-titles {
+   margin-top: 5px; /* Adjust as needed to add space between icon and title */ /* Adjust font size as needed */
+   color: black; /* Adjust color as needed */
+   font-family: "might-makes-right-bb", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+#title{
+   height: 20%; /* Set height to 50% of viewport height */
+   width: auto; /* Let the width adjust automatically */
+  text-align: center;
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto
+}
+#query-box{
+    background-color: #A41D2C;
+    height: 20vh;
+    width: auto;
+}
+#order-page{
+    background-color: #A41D2C;
+}
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .text-box#navbox {
+        height: 22vh; /* Adjust height for smaller screens */
+        transform: translateY(190%); /* Move down */
+    }
+    .text-box {
+        height: 26vh; /* Adjust height for smaller screens */
+        top: calc(40% - 10vh); /* Adjust vertical position */
+    }
+    .nav-titles {
+        font-size: 3vw; /* Responsive font size */
+    }
+    .icon {
+        height: 8vh; /* Adjust height for smaller screens */
+    }
+    #title {
+        height: 8vh; /* Adjust height for smaller screens */
+    }
+    .skewed {
+        height: 6vh; /* Adjust height for smaller screens */
+        width: 14vw; /* Adjust width for smaller screens */
+    }
+    #query {
+        height: 3em; /* Triple the height of the input box */
+        font-family: "might-makes-right-bb", sans-serif; /* Custom font */
+        background-color: #FED55E; /* Yellow background */
+    }
+}
+
+/* Media query for medium-sized screens */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+    .text-box#navbox {
+        height: 35vh; /* Adjust height for medium-sized screens */
+        transform: translateY(400%); /* Move down */
+    }
+    .text-box {
+        height: 25vh; /* Adjust height for medium-sized screens */
+    }
+    .icon {
+        height: 11.5vh; /* Adjust height for medium-sized screens */
+    }
+    #title {
+        height: 7.5vh; /* Adjust height for medium-sized screens */
+    }
+    .circle {
+        height: 80vh; /* Adjust height for medium-sized screens */
+        width: 80vh; /* Match height for a perfect circle */
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1025px) {
+    .text-box {
+        height: 45vh; /* Maintain default height for larger screens */
+    }
+    .icon {
+        height: 15vh; /* Adjust height for larger screens */
+    }
+    .text-box#navbox {
+        transform: translateY(150%); /* Move down */
+    }
+    #title {
+        height: 10vh; /* Adjust height for larger screens */
+    }
+    .skewed {
+        height: 6vh; /* Adjust height for larger screens */
+        width: 4vw; /* Adjust width for larger screens */
+    }
+    .about-us-box {
+        width: auto; /* Let the width adjust automatically */
+    }
+    .about-us-title {
+        width: 40vw; /* 40% of the viewport width */
+    }
+    #query-box {
+        background-color: #A41D2C; /* Red background */
+        height: 40vh; /* Fixed height */
+        width: auto; /* Let the width adjust automatically */
+    }
+    .order-card {
+        height: 35vh; /* Adjust height for larger screens */
+    }
+    .circle {
+        height: 90vh; /* Adjust height for larger screens */
+        width: 90vh; /* Match height for a perfect circle */
+    }
+}
+
+
+
+
+
+
+
